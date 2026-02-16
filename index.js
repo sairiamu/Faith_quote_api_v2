@@ -19,6 +19,7 @@ app.get("/api/bible/quotes/",BibleQuotes);
 app.get("/api/quran/",quranTeachings);
 app.get("/api/quran/quotes/",quranQuotes);
 
-app.listen(PORT,()=>{
-    console.log(`Server is running on port ${PORT}`);
-})
+//app.listen(PORT,()=>{
+//    console.log(`Server is running on port ${PORT}`);
+//})
+export default app;

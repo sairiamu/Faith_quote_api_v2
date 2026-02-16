@@ -1,11 +1,8 @@
 import pool from "../../data/databaseConnection.js";
-import exphbs from 'express-handlebars'
 import express from 'express'
 
 const app = express();
 app.use(express.json());
-app.engine('handlebars', exphbs.engine());
-app.set('view engine','handlebars')
 
 const BibleTeachings = (req,res) => {
     const QueryCommand = "select * from maneno_biblia"
